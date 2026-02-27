@@ -5,8 +5,8 @@ sequenceDiagram
 
     Note over browser: User presses 'Save' button after typing text.
 
-    Note over browser: 'spa.js' executes 'e.preventDefault' to prevent default action(page reload)
-    Note over browser: 'spa.js' adds new note on the list and render screen
+    Note right of browser: 'spa.js' executes 'e.preventDefault' to prevent default action(page reload)
+    Note right of browser: 'spa.js' adds new note on the list and render screen
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server

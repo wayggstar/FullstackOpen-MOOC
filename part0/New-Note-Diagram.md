@@ -5,7 +5,7 @@ sequenceDiagram
 
     Note over browser: User presses 'Save' button after typing text.
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/new_notes
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_notes
     activate server
     Note left of server: Add new note in list
     server-->>browser: HTML status code 302 Found

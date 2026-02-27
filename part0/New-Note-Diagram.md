@@ -7,7 +7,7 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_notes
     activate server
-    Note left of server: Add new note in list
+    Note right of browser: Add new note in list
     server-->>browser: HTML status code 302 Found
     deactivate server
 
